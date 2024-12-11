@@ -1,0 +1,307 @@
+/* General Styles */
+.ball {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+     /* Green color for the dot */
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interference with clicks */
+    z-index: 9999; /* Ensures it's on top of all elements */
+    transition: transform 0.02s ease; /* Smooth movement */
+    
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8f6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Header Styles */
+header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.748);
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd54f;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #388e3c;
+}
+
+.search-bar button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e68900;
+}
+
+.login-btn {
+    background-color: #ff9800;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e68900;
+}
+
+/* Contact Us Page Container */
+.contact-us-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us Header */
+.contact-us-container .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-us-container .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #f7f1f1;
+}
+
+.contact-us-container .header p {
+    color: #e4d9d9;
+    font-size: 1.2rem;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #040804;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a i {
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.social-links a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+/* Icon Styling */
+.social-links a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+
+
+.social-links a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+/* Icon Styling */
+.social-links a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .contact-us-container {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .social-links a {
+        font-size: 1rem; /* Adjust size on mobile */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #ff9800;
+}
+
+footer p {
+    margin: 5px 0;
+}

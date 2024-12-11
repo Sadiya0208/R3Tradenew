@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+p {
+    color: #666;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    position: relative;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e68900;
+}
+
+/* Increased size and repositioned login button */
+.login-btn {
+    background-color: #ff9800;
+    padding: 12px 25px;
+    margin-left: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e68900;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: linear-gradient(to right, #4CAF50, #81C784);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #ff9800;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #333;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #81C784;
+    padding: 30px;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Reviews Section */
+#reviews {
+    padding: 50px;
+    text-align: center;
+}
+
+.review {
+    display: flex;                      /* Use flexbox to align items */
+    justify-content: center;           /* Center the reviews */
+    align-items: flex-start;           /* Align items at the start */
+    margin-bottom: 20px;               /* Space between reviews */
+}
+
+.review-header {
+    display: flex;                     /* Use flexbox for reviewer details */
+    align-items: center;               /* Center align items vertically */
+    margin-bottom: 15px;
+    max-width: 600px;                 /* Limit the width of the review box */
+}
+
+.review-image {
+    width: 60px;                       /* Set fixed width for reviewer image */
+    height: 60px;                      /* Set fixed height for reviewer image */
+    border-radius: 50%;                /* Round shape for profile image */
+    margin-right: 15px;                /* Space between image and text */
+}
+
+.review-details {
+    display: flex;
+    flex-direction: column;            /* Stack name and review vertically */
+    align-items: flex-start;           /* Align text to the left */
+}
+
+.stars img {
+    width: 20px;                       /* Set size for star images */
+    height: 20px;                      /* Set size for star images */
+    margin-right: 2px;                 /* Space between stars */
+}
+
+.review p {
+    font-size: 1rem;                  /* Font size for review text */
+    color: #555;                       /* Color for review text */
+    margin-top: 10px;                  /* Space above review text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .review {
+        flex-direction: column;         /* Stack items on top of each other */
+        align-items: center;            /* Center align for smaller screens */
+    }
+    
+    .review-header {
+        flex-direction: row;            /* Keep row layout on larger screens */
+    }
+
+    .review-image {
+        margin-bottom: 10px;            /* Add space below image for smaller screens */
+    }
+}
+/* Login Section */
+#login {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    height: 400px;
+}
+
+.login-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.login-box {
+    position: absolute;
+    background-color: #fffacd;
+    padding: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.login-box h2 {
+    margin-bottom: 15px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff9800;
+}
+
+footer p {
+    margin: 5px 0;
+}

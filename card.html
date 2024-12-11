@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+
+        <div class="ball"></div>
+    <script src="scriptnew.js"></script>  
+    
+        <div class="logo">
+            <img src="logo.jpeg" alt="Barter Exchange Logo">
+            <span class="menu-toggle">&#9776;</span> <!-- Hamburger Menu Icon -->
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="card.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Bar and Login -->
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search">
+                <button type="button">Search</button>
+            </div>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+            </header>
+
+
+    <div class="container">
+        <header>
+            <h1> My Shopping Cart</h1>
+        </header>
+
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="booksell.jpeg" alt="Product 1" class="product-img">
+                            Product 1
+                        </td>
+                        <td>25.00\-</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>25.00\-</td>
+                        <td><button class="remove-btn">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="woosell.jpg" alt="Product 2" class="product-img">
+                            Product 2
+                        </td>
+                        <td>40.00\-</td>
+                        <td><input type="number" value="2" min="1"></td>
+                        <td>80.00\-</td>
+                        <td><button class="remove-btn">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="summary">
+            <div class="total">
+                <p>Total Price: <span id="total-price">105.00\-</span></p>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </div>
+
+       <!-- Footer Section -->
+       <footer>
+        <p>&copy; 2024 R3Trade. All rights reserved.</p>
+        <p><a href="terms-of-service.html">Privacy Policy & Term Of Services</a>
+            
+    </footer>
+
+</body>
+</html>
